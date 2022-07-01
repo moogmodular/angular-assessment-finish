@@ -1,0 +1,6 @@
+<div *ngFor="let person of starWarsPeopleWithFilms | async">
+  PERSON: {{ person.name }}
+  <div *ngFor="let title of person.movieTitles">
+    ----- {{ title }}
+  </div>
+</div>
